@@ -1,5 +1,33 @@
 {
   "rewrites": [
-    { "source": "/(.*)", "destination": "/" }
+    {
+      "source": "/api/v1/:path*",
+      "destination": "/api/:path*"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        }
+      ]
+    }
+  ],
+  "builds": [
+    {
+      "src": "next.config.js",
+      "use": "@vercel/next@2"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/_next/static/(.*)",
+      "headers": {
+        "cache-control": "public, max-age=31536000, immutable"
+      }
+    }
   ]
 }
