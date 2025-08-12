@@ -2,7 +2,7 @@ import { neon } from "@neondatabase/serverless"
 
 // Use environment variable for database URL
 const DATABASE_URL = process.env.DATABASE_URL || 
-  "postgresql://neondb_owner:npg_uXdR2h5MKyDb@ep-summer-salad-a1k4r81h-pooler.ap-southeast-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require"
+  "postgresql://neondb_owner:npg_xNmcl2OJse7k@ep-lively-shape-a1um47m7-pooler.ap-southeast-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require"
 
 if (!DATABASE_URL) {
   throw new Error("DATABASE_URL is not set")
