@@ -82,7 +82,15 @@ export default function LoginPage() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-400 via-purple-500 to-purple-600 relative overflow-hidden">
+  <div className="min-h-screen bg-gradient-to-br from-indigo-300 via-indigo-400 to-indigo-500 relative overflow-hidden">
+
+
+
+
+
+
+
+
       {/* Animated Background Elements */}
       <div className="absolute inset-0">
         <div className="absolute top-20 left-20 w-72 h-72 bg-white/10 rounded-full blur-3xl animate-pulse"></div>

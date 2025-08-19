@@ -4,6 +4,8 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(135deg, #E0F7FA 0%, #80DEEA 100%);
+  min-height: 100vh;
 }
 
 @layer utilities {
